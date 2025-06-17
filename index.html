@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body{
+            background-color:#f4f6f8;
+        }
+        th,td{
+            border:1px solid black;
+            padding:14px;
+            text-align:center;
+        }
+        th{
+            background-color:#34495e;
+            color:white;
+        }
+        table{
+            border-collapse:collapse;
+            box-shadow:0 0 10px black;
+            width:90%;
+        }
+        h2{
+            text-align:center;
+        }
+        button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+        .not-available {
+            color: red;
+            font-weight: bold;
+        }
+        .rating {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+            </style>
+            </head>
+            <body>
+                <h2>E-commerce Product Catalog</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Brand</th>
+                            <th>Category</th>
+                            <th>Price (₹)</th>
+                            <th>Rating</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>HP</td>
+                            <td>Electronics</td>
+                            <td>50000</td>
+                            <td class="rating">⭐⭐⭐⭐</td>
+                            <td class="available">Available</td>
+                            <td><button>Buy Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pendrive</td>
+                            <td>SanDisk</td>
+                            <td>Accessories</td>
+                            <td>500</td>
+                            <td class="rating">⭐⭐⭐</td>
+                            <td class="not-available">Not Available</td>
+                            <td><button disabled>Buy Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Headphones</td>
+                             <td>boAt</td>
+                             <td>Audio</td>
+                             <td>1500</td>
+                             <td class="rating">⭐⭐⭐⭐</td>
+                             <td class="available">Available</td>
+                             <td><button>Buy Now</button></td>
+                        </tr>
+                        <tr>
+                             <td>Mouse</td>
+                             <td>Logitech</td>
+                             <td>Accessories</td>
+                             <td>700</td>
+                             <td class="rating">⭐⭐⭐⭐⭐</td>
+                             <td class="available">Available</td>
+                             <td><button>Buy Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Keyboard</td>
+                            <td>Potronics</td>
+                            <td>Accessories</td>
+                            <td>1200</td>
+                            <td class="rating">⭐⭐⭐</td>
+                            <td class="not-available">Not Available</td>
+                            <td><button disabled>Buy Now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </body>
+            </html>
